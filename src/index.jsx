@@ -1,3 +1,5 @@
-import Button from './button'
+import Button    from './button'
+import Icon      from './icon'
+import Indicator from './indicator'
 
-export { Button };
+export { Button, Icon, Indicator };

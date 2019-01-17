@@ -9,11 +9,11 @@
   min-width: 30px;
   min-height: 30px;
   border-radius: 29px;
+  background-color: black;
 }
 
 .glyph--arrow {
   mask: url(~assets/arrow.svg) center no-repeat;
-  transform: rotate(180deg);
 }
 
 .glyph--human {
@@ -26,4 +26,5 @@
 
 .glyph--arrow-up {
   mask: url(~assets/arrow.svg) center no-repeat;
+  transform: rotate(180deg);
 }

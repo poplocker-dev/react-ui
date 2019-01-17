@@ -1,0 +1,17 @@
+.indicator {
+  .glyph {
+    background-color: white;
+  } 
+
+  &.indicator--up {
+    .icon {
+      background: var(--button-darker-color);
+    }
+  }
+
+  &.indicator--down {
+    .icon {
+      background: var(--button-alt-darker-color);
+    }
+  }
+}

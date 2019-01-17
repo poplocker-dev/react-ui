@@ -1,6 +1,6 @@
 const webpack = require('webpack');
-const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 const path = require('path');
+const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 
 module.exports = {
   entry: './src/index.jsx',
@@ -44,9 +44,6 @@ module.exports = {
         }
       }
     ]
-  },
-  externals: {
-    'react': 'commonjs react'
   },
 	resolve: {
 		extensions: ['.js', '.jsx'],
