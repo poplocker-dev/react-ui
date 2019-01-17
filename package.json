@@ -1,0 +1,40 @@
+{
+  "name": "@poplocker/react-ui",
+  "version": "1.0.0",
+  "description": "Common React Components for PopLocker",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "webpack --watch --mode development",
+    "build": "webpack --mode production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/poplocker-dev/react-ui.git"
+  },
+  "bugs": {
+    "url": "https://github.com/poplocker-dev/react-ui/issues"
+  },
+  "homepage": "https://github.com/poplocker-dev/react-ui#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/preset-env": "^7.2.3",
+    "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.4.5",
+    "babel-loader": "^8.0.5",
+    "css-loader": "^2.1.0",
+    "cssnano": "^4.1.8",
+    "directory-named-webpack-plugin": "^4.0.0",
+    "eslint": "^5.12.0",
+    "eslint-plugin-react": "^7.12.4",
+    "postcss-loader": "^3.0.0",
+    "postcss-nested": "^4.1.1",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^4.28.4",
+    "webpack-cli": "^3.2.1"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "react": "^16.7.0"
+  }
+}
