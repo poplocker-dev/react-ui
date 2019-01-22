@@ -3,6 +3,7 @@ const path = require('path');
 const DirectoryNamedWebpackPlugin = require('directory-named-webpack-plugin');
 
 module.exports = {
+  devtool: false,
   entry: './src/index.jsx',
   output: {
     path: path.resolve(__dirname, 'build'),
@@ -49,6 +50,7 @@ module.exports = {
 		extensions: ['.js', '.jsx'],
     alias: {
       src: __dirname + '/src',
+      css: __dirname + '/src/css',
       assets: __dirname + '/assets',
     },
     plugins: [

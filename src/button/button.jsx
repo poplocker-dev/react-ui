@@ -2,15 +2,17 @@ import React from 'react'
 import cl    from 'classnames'
 import Icon  from 'src/icon'
 
+import 'css/colors.css'
 import './button.css'
 
-const classes = (alt) => ({
+const classes = (type) => ({
   'btn': true,
-  'btn--alt': alt
+  'btn--alt': type == 'alt',
+  'btn--reject': type == 'reject'
 });
 
 const Button = (props) => (
-  <button className={cl(classes(props.alt))} {...props}>
+  <button className={cl(classes(props.type))} {...props}>
     <div className="caption">
       { props.children }
     </div>

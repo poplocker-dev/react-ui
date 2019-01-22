@@ -30,6 +30,7 @@
 
 .btn:hover {
   background-color: var(--button-darker-color);
+  box-shadow: none;
 
   .icon {
     transition: all 0.7s;
@@ -58,8 +59,26 @@
   } 
 }
 
+.btn--reject {
+  box-shadow: -2px 9px 30px 0px var(--button-reject-shadow-color);
+  background-color: var(--button-reject-color);
+
+  .icon {
+    background: var(--button-reject-darker-color);
+  }
+}
+
+.btn--reject:hover {
+  background-color: var(--button-reject-darker-color);
+
+  .glyph {
+    background-color: var(--button-reject-darker-color);
+  }
+}
+
 .btn:disabled,
 .btn[disabled] {
   pointer-events: none;
   opacity: 0.5;
+  box-shadow: none;
 }
