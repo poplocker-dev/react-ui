@@ -1,18 +1,18 @@
 :root {
-  --foreground-color: #353A41;
-  --background-color: #FFFFFF;
-  --label-color: #4880FF;
-  --border-color: #DBDBDB;
+  --foreground-color: #353a41;
+  --background-color: #ffffff;
+  --label-color: #4880ff;
+  --border-color: #dbdbdb;
   --border-focus-color: #b4b4b4;
-  --invalid-color: #FF0054;
-  --button-color: #4880FF;
+  --invalid-color: #ff0054;
+  --button-color: #4880ff;
   --button-shadow-color: rgba(72,128,255,0.50);
-  --button-darker-color: #386BE1;
-  --button-fg: #FFFFFF;
-  --button-alt-color: #34CD65;
+  --button-darker-color: #386be1;
+  --button-fg: #ffffff;
+  --button-alt-color: #34cd65;
   --button-alt-shadow-color: rgba(72,128,255,0.50);
-  --button-alt-darker-color: #20BE53;
-  --button-reject-color: var(--invalid-color);
+  --button-alt-darker-color: #20be53;
+  --button-reject-color: #dc3664;
   --button-reject-shadow-color: rgba(255, 0, 84, 0.2);
-  --button-reject-darker-color: #c60042;
+  --button-reject-darker-color: #b31e48;
 }

@@ -28,3 +28,7 @@
   mask: url(~assets/arrow.svg) center no-repeat;
   transform: rotate(180deg);
 }
+
+.glyph--close {
+  mask: url(~assets/close.svg) center no-repeat;
+}
