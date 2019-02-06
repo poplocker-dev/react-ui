@@ -5,14 +5,14 @@ import Icon  from 'src/icon'
 import 'css/colors.css'
 import './button.css'
 
-const classes = (type) => ({
+const classes = (kind) => ({
   'btn': true,
-  'btn--alt': type == 'alt',
-  'btn--reject': type == 'reject'
+  'btn--alt': kind == 'alt',
+  'btn--reject': kind == 'reject'
 });
 
 const Button = (props) => (
-  <button className={cl(classes(props.type))} {...props}>
+  <button className={cl(classes(props.kind))} {...props}>
     <div className="caption">
       { props.children }
     </div>
