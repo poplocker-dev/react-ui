@@ -1,5 +1,4 @@
 .btn {
-  width: 161px;
   height: 40px;
   display: flex;
   justify-content: space-around;
@@ -42,6 +41,10 @@
   } 
 }
 
+.btn--responsive {
+  width: auto;
+}
+
 .btn--alt {
   box-shadow: -2px 9px 30px 0px var(--button-alt-shadow-color);
   background-color: var(--button-alt-color);
@@ -74,6 +77,39 @@
   .glyph {
     background-color: var(--button-reject-darker-color);
   }
+}
+
+.btn--light, .btn--light:hover {
+  background-color: white;
+  color: var(--foreground-color);
+  border: 1px solid var(--border-color);
+  box-shadow: none;
+
+  .icon {
+    background: white;
+    border: 1px solid var(--border-color);
+  }
+  .glyph {
+    background: var(--foreground-color);
+  }
+}
+
+.btn--light:hover {
+  background-color: white;
+  border-color: var(--border-focus-color);
+
+  .icon {
+    border: 1px solid var(--button-darker-color);
+    background: var(--button-darker-color);
+  }
+
+  .glyph {
+    background: white;
+  }
+}
+
+.btn--responsive {
+  width: auto;
 }
 
 .btn:disabled,

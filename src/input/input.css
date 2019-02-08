@@ -1,6 +1,5 @@
 .input-field {
   position: relative;
-  margin-bottom: 21px;
 
   input {
 	  height: 43px;
@@ -19,7 +18,6 @@
 
   .error {
     color: var(--invalid-color);
-    margin-top: 11px;
 
     &::first-letter {
       text-transform: capitalize;

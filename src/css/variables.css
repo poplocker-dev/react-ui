@@ -1,0 +1,9 @@
+:root {
+  --border-hairline: 1px;
+
+  @media 
+  (-webkit-min-device-pixel-ratio: 1.5), 
+  (min-resolution: 144dpi){ 
+    --border-hairline: 0.9px;
+  }
+}
