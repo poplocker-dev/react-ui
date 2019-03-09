@@ -32,3 +32,7 @@
 .glyph--close {
   mask: url(~assets/close.svg) center no-repeat;
 }
+
+.glyph--settings {
+  mask: url(~assets/settings.svg) center no-repeat;
+}
