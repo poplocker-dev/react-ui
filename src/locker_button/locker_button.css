@@ -1,0 +1,8 @@
+.locker-button--only-key button {
+  border: 1px solid var(--invalid-color);
+}
+
+.locker-button--pending button {
+  border: 1px solid var(--warning-color);
+;
+}
