@@ -27,7 +27,7 @@ class PassField extends React.Component {
   render () {
     return (
       <div className="password-field">
-        <Input type={this.state.type} {...this.props}/>
+        <Input type={this.state.type} spellCheck={false} {...this.props}/>
         <div onClick={ this.toggle.bind(this) } className={ cl(this.previewClasses()) } />
       </div>
     )
