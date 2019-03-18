@@ -38,17 +38,9 @@
 }
 
 .glyph--back {
-  mask: url(~assets/settings.svg) center no-repeat;
+  mask: url(~assets/back.svg) center no-repeat;
 }
 
-.glyph--copy_clipboard {
-  mask: url(~assets/settings.svg) center no-repeat;
-}
-
-.glyph--coinbase {
-  mask: url(~assets/settings.svg) center no-repeat;
-}
-
-.glyph--shapeshift {
-  mask: url(~assets/settings.svg) center no-repeat;
+.glyph--copy-clipboard {
+  mask: url(~assets/copy_clipboard.svg) center no-repeat;
 }
