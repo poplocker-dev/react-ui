@@ -36,3 +36,19 @@
 .glyph--settings {
   mask: url(~assets/settings.svg) center no-repeat;
 }
+
+.glyph--back {
+  mask: url(~assets/settings.svg) center no-repeat;
+}
+
+.glyph--copy_clipboard {
+  mask: url(~assets/settings.svg) center no-repeat;
+}
+
+.glyph--coinbase {
+  mask: url(~assets/settings.svg) center no-repeat;
+}
+
+.glyph--shapeshift {
+  mask: url(~assets/settings.svg) center no-repeat;
+}
