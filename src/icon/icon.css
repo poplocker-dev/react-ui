@@ -44,3 +44,11 @@
 .glyph--copy-clipboard {
   mask: url(~assets/copy_clipboard.svg) center no-repeat;
 }
+
+.glyph--coinbase {
+  mask: url(~assets/coinbase.svg) center no-repeat;
+}
+
+.glyph--shapeshift {
+  mask: url(~assets/shapeshift.svg) center no-repeat;
+}
