@@ -41,6 +41,11 @@
   mask: url(~assets/back.svg) center no-repeat;
 }
 
+.glyph--forward {
+  mask: url(~assets/back.svg) center no-repeat;
+  transform: rotate(180deg);
+}
+
 .glyph--copy-clipboard {
   mask: url(~assets/copy_clipboard.svg) center no-repeat;
 }
