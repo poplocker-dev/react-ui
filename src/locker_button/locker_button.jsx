@@ -23,10 +23,16 @@ const classes = (status, onlyKey) => ({
   'locker-button--only-key'    : onlyKey
 });
 
-const LockerButton = ({ status, name, onlyKey }) => (
-  <div className={cl(classes(status, onlyKey))}>
-    <Button>{ label(status, name) }</Button>
-  </div>
-);
+const LockerButton = (props) => {
+  const { locker } = props;
+  if (locker == null)
+    return '...'
+  else
+    return (
+      <div className={cl(classes(locker.status, locker.onlyKey))}>
+        <Button {...props}>{ label(locker.status, locker.name) }</Button>
+      </div>
+    );
+}
 
 export default LockerButton;
