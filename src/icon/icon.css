@@ -38,12 +38,13 @@
 }
 
 .glyph--back {
-  mask: url(~assets/back.svg) center no-repeat;
+  mask: url(~assets/arrow.svg) center no-repeat;
+  transform: rotate(90deg);
 }
 
 .glyph--forward {
-  mask: url(~assets/back.svg) center no-repeat;
-  transform: rotate(180deg);
+  mask: url(~assets/arrow.svg) center no-repeat;
+  transform: rotate(-90deg);
 }
 
 .glyph--copy-clipboard {
