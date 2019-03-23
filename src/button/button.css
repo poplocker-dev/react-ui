@@ -21,10 +21,10 @@
   .icon {
     background: var(--button-darker-color);
   }
-  
+
   .glyph {
     background-color: white;
-  } 
+  }
 }
 
 .btn:hover {
@@ -33,12 +33,12 @@
 
   .icon {
     transition: all 0.7s;
-    background-color: white; 
+    background-color: white;
   }
-  
+
   .glyph {
     background-color: var(--button-darker-color);
-  } 
+  }
 }
 
 .btn--responsive {
@@ -59,7 +59,7 @@
 
   .glyph {
     background-color: var(--button-alt-darker-color);
-  } 
+  }
 }
 
 .btn--reject {
@@ -117,4 +117,15 @@
   pointer-events: none;
   opacity: 0.5;
   box-shadow: none;
+}
+
+.buttons--2row {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: flex-end;
+
+    .btn {
+      width: 47.5%;
+    }
 }
