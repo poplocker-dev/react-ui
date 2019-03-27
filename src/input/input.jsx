@@ -7,12 +7,17 @@ const classes = (props) => ({
   'input-field--invalid': props.error
 });
 
-const Input = (props) => (
-  <div className={ cl(classes(props)) }>
-    <div className="label">{props.label}</div>
-    <input {...props}/>
-    <div className="error">{props.error}</div>
-  </div>
-)
+const Input = (props) => {
+  const { label, badge, badgeType, error, ...other } = props;
+
+  return (
+    <div className={ cl(classes(props)) }>
+      <div className="label">{label}</div>
+      <div className={`badge badge--${badgeType || 'info'}`}>{badge}</div>
+      <input {...other}/>
+      <div className="error">{error}</div>
+    </div>
+  );
+}
 
 export default Input;

@@ -1,14 +1,17 @@
 .input-field {
   position: relative;
+  margin-bottom: 21px;
 
   input {
-	  height: 43px;
+    height: 43px;
     width: 100%;
     padding-left: 13px;
-    padding-right: 61px;
-	  border: 1px solid var(--border-color);
-	  border-radius: 2px;
+    padding-right: 13px;
+    border: 1px solid var(--border-color);
+    border-radius: 2px;
+    text-align: center;
     font-size: 16px;
+    font-weight: bold;
     line-height: 23px;
 
     &:focus {
@@ -18,6 +21,7 @@
 
   .error {
     color: var(--invalid-color);
+    margin-top: 11px;
 
     &::first-letter {
       text-transform: capitalize;
@@ -26,12 +30,28 @@
 
   .label {
     position: absolute;
-	  color: var(--label-color);
+    color: var(--label-color);
     top: -6px;
     left: 8px;
     padding: 0 5px;
     background: var(--background-color);
-	  letter-spacing: -0.1px;
+    letter-spacing: -0.1px;
+  }
+
+  .badge {
+    position: absolute;
+    top: 25%;
+    right: 0;
+    padding: 0 5px;
+    letter-spacing: -0.1px;
+  }
+
+  .badge--valid {
+    color: var(--valid-color);
+  }
+
+  .badge--info {
+    color: var(--info-color);
   }
 }
 

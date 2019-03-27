@@ -1,0 +1,23 @@
+@keyframes blipping {
+  to {
+    opacity: 0.1;
+  }
+}
+.blipping {
+  display: flex;
+  justify-content: center;
+}
+.blipping > div {
+  width: 0.5em;
+  height: 0.5em;
+  margin: 0 0.1em;
+  background: var(--foreground-color);
+  border-radius: 50%;
+  animation: blipping 0.6s infinite alternate;
+}
+.blipping > div:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.blipping > div:nth-child(3) {
+  animation-delay: 0.4s;
+}
