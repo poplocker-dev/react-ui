@@ -23,4 +23,8 @@
       content: url('~assets/eye_closed.svg');
     }
   }
+
+  input {
+    text-align: left;
+  }
 }
