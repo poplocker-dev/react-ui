@@ -6,11 +6,11 @@
   border-radius: 20px;
   cursor: pointer;
   align-items: center;
-	color: var(--button-fg);
+  color: var(--button-fg);
   background-color: var(--button-color);
   font-size: 13px;
-	font-weight: bold;
-	line-height: 20px;
+  font-weight: bold;
+  line-height: 20px;
   transition: all 0.5s;
   box-shadow: -2px 9px 30px 0px var(--button-shadow-color);
 

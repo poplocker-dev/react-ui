@@ -14,7 +14,7 @@
   --button-darker-color: #386be1;
   --button-fg: #ffffff;
   --button-alt-color: var(--valid-color);
-  --button-alt-shadow-color: rgba(72,128,255,0.50);
+  --button-alt-shadow-color: rgb(32, 190, 83, 0.50);
   --button-alt-darker-color: #20be53;
   --button-reject-color: #dc3664;
   --button-reject-shadow-color: rgba(255, 0, 84, 0.2);

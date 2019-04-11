@@ -1,0 +1,60 @@
+.spinning {
+  position: relative;
+
+  div {
+    width: 6%;
+    height: 21%;
+    background: var(--info-color);
+    position: absolute;
+    left: 47%;
+    top: 40%;
+    opacity: 0;
+    border-radius: 50px;
+    animation: fade 1s linear infinite;
+  }
+
+  @keyframes fade {
+    from {opacity: 1;}
+    to {opacity: 0.25;}
+  }
+
+  .bar1 {
+    transform:rotate(0deg) translate(0, -130%);
+    animation-delay: 0s;
+  }
+
+  .bar2 {
+    transform:rotate(45deg) translate(0, -130%);
+    animation-delay: 0.125s;
+  }
+
+  .bar3 {
+    transform:rotate(90deg) translate(0, -130%);
+    animation-delay: 0.250s;
+  }
+
+  .bar4 {
+    transform:rotate(135deg) translate(0, -130%);
+    animation-delay: 0.375s;
+  }
+
+  .bar5 {
+    transform:rotate(180deg) translate(0, -130%);
+    animation-delay: 0.500s;
+  }
+
+  .bar6 {
+    transform:rotate(225deg) translate(0, -130%);
+    animation-delay: 0.625s;
+  }
+
+  .bar7 {
+    transform:rotate(270deg) translate(0, -130%);
+    animation-delay: 0.750s;
+  }
+
+  .bar8 {
+    transform:rotate(315deg) translate(0, -130%);
+    animation-delay: 0.875s;
+  }
+}

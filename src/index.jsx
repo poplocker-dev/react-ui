@@ -5,9 +5,10 @@ import Indicator    from './indicator'
 import PassField    from './pass_field'
 import Bouncing     from './bouncing'
 import Blipping     from './blipping'
+import Spinning     from './spinning'
 import Preloader    from './preloader'
 import LockerButton from './locker_button'
 
 import 'css/variables.css'
 
-export { Button, Icon, Indicator, PassField, Bouncing, Blipping, Preloader, LockerButton, Input };
+export { Button, Icon, Indicator, PassField, Bouncing, Blipping, Spinning, Preloader, LockerButton, Input };
