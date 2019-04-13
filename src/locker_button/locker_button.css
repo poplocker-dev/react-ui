@@ -1,4 +1,6 @@
-.locker-button--only-key, .locker-button--error, .locker-button--invalid button {
+.locker-button--only-key button,
+.locker-button--error button,
+.locker-button--invalid button {
   border: 1px solid var(--invalid-color);
 }
 
