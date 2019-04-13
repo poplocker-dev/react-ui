@@ -1,8 +1,7 @@
-.locker-button--only-key button {
+.locker-button--only-key, .locker-button--error, .locker-button--invalid button {
   border: 1px solid var(--invalid-color);
 }
 
 .locker-button--pending button {
   border: 1px solid var(--warning-color);
-;
 }

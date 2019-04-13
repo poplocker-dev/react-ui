@@ -14,6 +14,11 @@ const label = (status, name) => {
       return name;
     case 'pending':
       return name ? name : 'Pending';
+    case 'invalid':
+      return 'Invalid Smart Locker';
+    case 'error':
+    default:
+      return 'Error';
   }
 }
 
