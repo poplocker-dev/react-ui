@@ -24,9 +24,9 @@ const label = (status, name) => {
 
 const classes = (status, onlyKey, creating) => ({
   'locker-button'              : true,
+  'locker-button--pending'     : creating,
   [`locker-button--${status}`] : true,
-  'locker-button--only-key'    : onlyKey,
-  'locker-button--pending'     : creating
+  'locker-button--only-key'    : onlyKey
 });
 
 const badge = (locker) => {

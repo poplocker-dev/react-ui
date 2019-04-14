@@ -50,7 +50,10 @@
 }
 
 .locker-button--pending .btn {
-  opacity: 1;
-  pointer-events: none;
   border: 1px solid var(--warning-color);
+
+  &:hover {
+    opacity: 1;
+    border: 1px solid var(--warning-darker-color);
+  }
 }
