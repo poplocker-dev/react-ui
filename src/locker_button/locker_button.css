@@ -1,9 +1,56 @@
-.locker-button--only-key button,
-.locker-button--error button,
-.locker-button--invalid button {
-  border: 1px solid var(--invalid-color);
+.locker-button {
+  position: relative;
+
+  .btn {
+    position: relative;
+    margin: auto;
+    padding: 0 20px;
+    opacity: 0.69;
+    transition: opacity 0.5s;
+    border: 1px solid var(--button-color);
+
+    &:hover {
+      opacity: 1;
+      border: 1px solid var(--button-darker-color);
+    }
+  }
+
+  .btn .caption {
+    flex-basis: 100%;
+    max-width: 280px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--locker-text-color);
+  }
+
+  .locker-badge {
+    position: absolute;
+    top: -2px;
+    right: -6px;
+    color: #fff;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+  }
 }
 
-.locker-button--pending button {
+.locker-button--only-key .btn,
+.locker-button--error .btn,
+.locker-button--invalid .btn {
+  border: 1px solid var(--button-reject-color);
+
+  .locker-badge {
+    background: var(--button-reject-color);
+  }
+
+  &:hover {
+    opacity: 1;
+    border: 1px solid var(--button-reject-darker-color);
+  }
+}
+
+.locker-button--pending .btn {
+  opacity: 1;
+  pointer-events: none;
   border: 1px solid var(--warning-color);
 }

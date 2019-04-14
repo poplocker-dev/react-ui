@@ -13,12 +13,19 @@ const classes = ({ kind }) => ({
   'btn--reject'     : kind == 'reject'
 });
 
+const icon = (icon) => {
+  if (icon)
+    return <Icon glyph={icon}/>
+  else
+    return null;
+}
+
 const Button = (props) => (
   <button className={cl(classes(props))} {...props}>
     <div className="caption">
       { props.children }
     </div>
-    <Icon glyph={props.icon}/>
+    { icon(props.icon) }
   </button>
 );
 

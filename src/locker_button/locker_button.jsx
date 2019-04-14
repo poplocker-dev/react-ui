@@ -22,20 +22,38 @@ const label = (status, name) => {
   }
 }
 
-const classes = (status, onlyKey) => ({
+const classes = (status, onlyKey, creating) => ({
   'locker-button'              : true,
   [`locker-button--${status}`] : true,
-  'locker-button--only-key'    : onlyKey
+  'locker-button--only-key'    : onlyKey,
+  'locker-button--pending'     : creating
 });
 
+const badge = (locker) => {
+  if (locker.onlyKey)
+    return <div className="locker-badge">!</div>
+  else
+    return null;
+}
+
+const caption = (locker, creating) => {
+  if (creating)
+    return `Creating ${creating}`;
+  else
+    return label(locker.status, locker.name);
+}
+
 const LockerButton = (props) => {
-  const { locker } = props;
+  const { locker, creating, ...other } = props;
   if (locker == null)
     return '...'
   else
     return (
-      <div className={cl(classes(locker.status, locker.onlyKey))}>
-        <Button {...props}>{ label(locker.status, locker.name) }</Button>
+      <div className={cl(classes(locker.status, locker.onlyKey, creating))}>
+        <Button kind="light" {...other}>
+          { badge(locker) }
+          { caption(locker, creating) }
+        </Button>
       </div>
     );
 }
