@@ -1,5 +1,6 @@
 .locker-button {
   position: relative;
+  white-space: nowrap;
 
   .btn {
     position: relative;
