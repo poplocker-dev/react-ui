@@ -46,7 +46,7 @@ const caption = (locker, creating) => {
 const LockerButton = (props) => {
   const { locker, creating, ...other } = props;
   if (locker == null)
-    return '...'
+    return null
   else
     return (
       <div className={cl(classes(locker.status, locker.onlyKey, creating))}>
