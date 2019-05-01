@@ -58,3 +58,11 @@
     border: 1px solid var(--warning-darker-color);
   }
 }
+
+.locker-button--error .btn {
+  pointer-events: none;
+  opacity: 0.8;
+  .locker-badge {
+    display: none;
+  }
+}
