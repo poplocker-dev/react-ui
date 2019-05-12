@@ -5,7 +5,7 @@ import './input.css'
 const classes = (props) => ({
   'input-field': true,
   'input-field--invalid': props.error,
-  'input-field--condensed': props.value.length >= 28,
+  'input-field--condensed': props.value.length >= 24,
   'input-field--with-badge': props.badge
 });
 
