@@ -16,6 +16,9 @@
   }
 
   &.indicator--self {
+    .glyph {
+      background-color: black;
+    } 
     .icon {
       background: var(--light-background-color);
     }
