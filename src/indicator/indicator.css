@@ -14,4 +14,16 @@
       background: var(--button-alt-darker-color);
     }
   }
+
+  &.indicator--self {
+    .icon {
+      background: var(--light-background-color);
+    }
+  }
+
+  &.indicator--error {
+    .icon {
+      background: var(--invalid-color);
+    }
+  }
 }

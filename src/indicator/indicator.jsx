@@ -5,7 +5,7 @@ import './indicator.css'
 
 const Indicator = ({ direction }) => (
   <div className={`indicator indicator--${direction}`}>
-    <Icon glyph={direction == 'up' ? 'arrow-up' : 'arrow' }/>
+    <Icon glyph={direction == 'error' ? 'close' : direction == 'self' ? 'forward' : direction == 'up' ? 'arrow-up' : 'arrow' }/>
   </div>
 );
 

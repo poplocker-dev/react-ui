@@ -2,6 +2,7 @@
 :root {
   --foreground-color: #353a41;
   --background-color: #ffffff;
+  --light-background-color: #f6f9fc;
   --valid-color: #34cd65;
   --info-color: #4880ff;
   --label-color: var(--info-color);
