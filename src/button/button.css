@@ -119,13 +119,20 @@
   box-shadow: none;
 }
 
-.buttons--2row {
+.buttons--2row, .buttons--1row {
   display: flex;
-  justify-content: space-between;
   flex-grow: 1;
   align-items: flex-end;
 
     .btn {
       width: 47.5%;
     }
+}
+
+.buttons--2row {
+  justify-content: space-between;
+}
+
+.buttons--1row {
+  justify-content: space-around;
 }
