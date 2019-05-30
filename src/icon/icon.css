@@ -47,6 +47,10 @@
   transform: rotate(-90deg);
 }
 
+.glyph--pending {
+  mask: url(~assets/pending.svg) center no-repeat;
+}
+
 .glyph--copy-clipboard {
   mask: url(~assets/copy_clipboard.svg) center no-repeat;
 }
