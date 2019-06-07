@@ -48,8 +48,8 @@ const caption = (locker, creating) => {
 
 const LockerButton = (props) => {
   const { locker, creating, ...other } = props;
-  const requests = locker.requests.length;
-  const onlyKey = locker.keys.length < 2 && !requests;
+  const requests = locker.requests? locker.requests.length : 0;
+  const onlyKey = locker.keys && locker.keys.length < 2 && !requests;
 
   if (locker == null)
     return null
