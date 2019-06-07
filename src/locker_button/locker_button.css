@@ -50,8 +50,13 @@
   }
 }
 
-.locker-button--pending .btn {
+.locker-button--pending .btn,
+.locker-button--requests .btn {
   border: 1px solid var(--warning-color);
+
+  .locker-badge {
+    background: var(--warning-color);
+  }
 
   &:hover {
     opacity: 1;
